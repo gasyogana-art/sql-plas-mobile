@@ -1,0 +1,41 @@
+<h2 id="statement">14</h2>
+<pre class="prettyprint" id="scoring-res">
+<div class="fl">module combinational_example (
+    input  a, 
+    input  b,   
+    output reg c  
+);
+    always @(*) begin
+        c = a | b;   
+    end
+
+endmodule
+
+
+1.What is the data type of c?<input size=2 ans="e42146cb5d5746b8c8311d5d71860bbdaee01f29bb3c3f08e3193d0cb051002b" placeholder=1></input>
+2.What is the module name?<input size=2 ans="bd1a8edf687f21c7529149d4810464443d44e876c69b6a42574db950248f1c96" placeholder=2></input>
+3.If a = 0, b = 1,what is c?<input size=2 ans="a183251a8414fd819da06488541d523365d51a7d0d942e272c2dce108f6dcdae" placeholder=3></input>
+4. How many inputs are in this circuit?<input size=2 ans="db6529e972a44a4db65c3f460fe66b7313138626d813d03fc7942eaa55327001" placeholder=4></input>
+5.What is the operator between a ,b (&,|,^)?<input size=2 ans="b92362f48db76de31009cf4bbaefc78486dcd390913bf0cbf4955c3183ae65f0" placeholder=5></input>
+6. Is the logic in this module synchronous or asynchronous?<input size=2 ans="85725ff788ad86281fd8f4b043bd41a31ca7a82e987794f4732616ed7ba63bb9" placeholder=6></input>
+
+
+</div>
+<div class="fr"><img src="images/Verilog_CH1_question14_img.png" width="500">
+</div>
+</pre>
+
+<div class="statisticalData">
+    <h5>Statistical Data</h5>
+    <div>Total number of questions: <span id="totalNumber">6</span></div>
+    <div>Number of correct answers: <span id="correctAnswers"></span></div>
+    <div>Accuracy rate: <span id="accuracyRate"></span></div>
+</div>
+
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+</script>

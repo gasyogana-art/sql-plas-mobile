@@ -1,0 +1,43 @@
+<h2 id="statement">9</h2>
+<pre class="prettyprint" id="scoring-res">
+<div class="fl">module DFF(
+    <input size=2 ans="70f0375c987eeb81f1d2612e70a97b5a63ddec5f5226aed96f8922019bab0012" placeholder=1></input> Clk,
+    <input size=2 ans="c7b072e344d0f86bb004406891f6b8aae9ee1c8232e72eca27793bcb0702f5b2" placeholder=2></input> D,
+    <input size=2 ans="d9c9e80b8c87a948d53619d9bf9f30adb8e7a0b1fc29cc2c7b6ace816e350963" placeholder=3></input> reg Q
+);
+    always @ (posedge Clk)begin
+        Q <= D;
+    end
+
+endmodule
+
+What is the module name?<input size=2 ans="46162f9591f6799fb562726f0290add67a8b4f5079477c65db8f60e00af2c59b" placeholder=4></input>
+
+
+</div>
+<div class="fr"><img src="images/Verilog_CH1_question9_img.png" height="300">
+Knowledeg point:
+A D Flip-Flop (DFF) stores the value of the data input (D) on the rising edge of the clock (Clk) and holds this value until the next clock edge or a reset occurs.
+
+Key Components:
+Data Input (D): The value to be stored.
+Clock (Clk): Triggers data storage on the rising edge.
+Output (Q): Holds the stored value.
+
+</div>
+</pre>
+
+<div class="statisticalData">
+    <h5>Statistical Data</h5>
+    <div>Total number of questions: <span id="totalNumber">4</span></div>
+    <div>Number of correct answers: <span id="correctAnswers"></span></div>
+    <div>Accuracy rate: <span id="accuracyRate"></span></div>
+</div>
+
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+</script>

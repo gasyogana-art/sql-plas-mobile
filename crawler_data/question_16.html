@@ -1,0 +1,35 @@
+<h2 id="statement">16</h2>
+<pre class="prettyprint" id="scoring-res">
+<div class="fl">1. Signals assigned values within an always block must be declared as reg. (T/F)<input size=2 ans="e7e2575aae0eb1d16960216b8305cea6fd2503c22cc9b4849e6463bd99ed8571" placeholder=1></input>
+2. The default type for signals not explicitly declared in Verilog is reg. (T/F)<input size=2 ans="252ae5ff9702bc62702cfd92064346fbb0eb4af0440b89f07cf3af199ae6536f" placeholder=2></input>
+3. An assign statement should only be used with signals declared as reg. (T/F)<input size=2 ans="4e6de0cc0cd37e038bc44720bca47927cae300c83f0811065928897ca92ccf5b" placeholder=3></input>
+4. A signal that changes in response to a clock edge should be declared as reg. (T/F)<input size=2 ans="1e5fec33548acc2b0961a181d926b21aea2df17398fbfe687760cca3eb7756be" placeholder=4></input>
+5. In combinational logic, signals in the sensitivity list are typically declared as wire.(T/F)<input size=2 ans="1ca962a7ff4c5716f755acc10dd7c8d7b6ca75fedd3aada64180d48593e127af" placeholder=5></input>
+ 
+
+</div>
+<div class="fr"><img src="images/Verilog_CH1_question16_img1.png" width="200">   <img src="images/Verilog_CH1_question16_img1.png" width="200">
+
+`wire`: Used for combinational logic and signal connections, cannot store values, driven by `assign` statements.
+`reg`: Used for sequential logic, can store values, assigned within always blocks.
+
+Reminders:
+・Variables assigned within an always block must be of type reg.
+・If a signal is not explicitly declared as wire or reg, it defaults to wire.
+</div>
+</pre>
+
+<div class="statisticalData">
+    <h5>Statistical Data</h5>
+    <div>Total number of questions: <span id="totalNumber">5</span></div>
+    <div>Number of correct answers: <span id="correctAnswers"></span></div>
+    <div>Accuracy rate: <span id="accuracyRate"></span></div>
+</div>
+
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+</script>

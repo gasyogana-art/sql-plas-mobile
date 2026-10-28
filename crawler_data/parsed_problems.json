@@ -1,0 +1,1090 @@
+[
+  {
+    "id": 1,
+    "statement": "1",
+    "name": "Start",
+    "knowledge_point": "",
+    "images": [
+      "Verilog_CH1_question1_img1.png",
+      "Verilog_CH1_question1_img2.png"
+    ],
+    "fl_raw": "module start(  \ninput a,\noutput b\n);\n\nassign b = a;\n\nendmodule\n\n\n1. What is the module name?<input size=2 ans=\"86b5568cb58d41689d03df36b51171b4318d755179a55d16410ff67ee6cd5b92\" placeholder=1></input>\n2. Which keyword is the start of this Verilog code?<input size=2 ans=\"d6edb796f76ed7419e6d8455699f0295f7ac8e2b4b3aeae2c321127381a8e9cf\" placeholder=2></input>\n3. Which keyword is the end of this Verilog code?<input size=2 ans=\"6a0fa51a5b74dbe0dbc35d075516010fd478f28695b75f4b3e591edee12bbac1\" placeholder=3></input>\n4. What is the input name?<input size=2 ans=\"808e66ec55e19cf01a72e71cf57d39b5e3fee1070d30d9c97975d8d0fbfe99bd\" placeholder=4></input>\n5. What is the output name?<input size=2 ans=\"40d674998c07527b12a31e2963b0603a34bb46ba1dbfdd51220a010f3b364d94\" placeholder=5></input>\n6. Which keyword is represents continuous assignment statements?<input size=2 ans=\"95f13e652fd67746f55e80950a9539170a9b36c71d922cafbb64f1cb9d896eaa\" placeholder=6></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "86b5568cb58d41689d03df36b51171b4318d755179a55d16410ff67ee6cd5b92",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "d6edb796f76ed7419e6d8455699f0295f7ac8e2b4b3aeae2c321127381a8e9cf",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "6a0fa51a5b74dbe0dbc35d075516010fd478f28695b75f4b3e591edee12bbac1",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "808e66ec55e19cf01a72e71cf57d39b5e3fee1070d30d9c97975d8d0fbfe99bd",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "40d674998c07527b12a31e2963b0603a34bb46ba1dbfdd51220a010f3b364d94",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "95f13e652fd67746f55e80950a9539170a9b36c71d922cafbb64f1cb9d896eaa",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 2,
+    "statement": "2",
+    "name": "Simple Wire",
+    "knowledge_point": "The assign statement in Verilog is used to describe combinational logic, continuously assigning the value of one signal to another.",
+    "images": [
+      "Verilog_CH1_question2_img1.png",
+      "Verilog_CH1_question2_img2.png"
+    ],
+    "fl_raw": "module simple_wire(  \ninput a,\n<input size=2 ans=\"9a12ae6f58e173dea20f08cba4531cb7a1ea71bac8fdc6771e9ba48b2f3c8b51\" placeholder=1></input> b\n);\n\n<input size=2 ans=\"e459ce56f15ef7defa0c2a3c08233bfe23761666067c12f468f0d4c0815d557e\" placeholder=2></input> b = a;\n\n<input size=2 ans=\"302aea03e1558eb201fb9fb289070527f0aef4ca8d25296f6d12a78dd8feb9bb\" placeholder=3></input>\n\n\n1. Which keyword is the start of the Verilog module?<input size=2 ans=\"84ebdeaf31ebeb0831c3c75d8bf8bd220bef0df4298be9c2f0455c0c4f283fb9\" placeholder=4></input>\n2. Which keyword is used to declare ports in Verilog code that receive external signals?<input size=2 ans=\"07e550f6ab67dc6694c0b835f4dd6d38a93e439895b605b45f2fe22c8047c29f\" placeholder=5></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "9a12ae6f58e173dea20f08cba4531cb7a1ea71bac8fdc6771e9ba48b2f3c8b51",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "e459ce56f15ef7defa0c2a3c08233bfe23761666067c12f468f0d4c0815d557e",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "302aea03e1558eb201fb9fb289070527f0aef4ca8d25296f6d12a78dd8feb9bb",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "84ebdeaf31ebeb0831c3c75d8bf8bd220bef0df4298be9c2f0455c0c4f283fb9",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "07e550f6ab67dc6694c0b835f4dd6d38a93e439895b605b45f2fe22c8047c29f",
+        "size": "2"
+      }
+    ],
+    "total_questions": 5
+  },
+  {
+    "id": 3,
+    "statement": "3",
+    "name": "Three Wires",
+    "knowledge_point": "",
+    "images": [
+      "Verilog_CH1_question3_img.png"
+    ],
+    "fl_raw": "<input size=2 ans=\"0d3bec766d9e67f6263bb44d05b32d40165e895beb24a5cb6ddb50d99a68a3d5\" placeholder=1></input> three_wire(  \ninput a,b,c,\n<input size=2 ans=\"2972caf382e2076f85a7c4f6e2c589ba75d57bdbb1ac9a84b6a3f18ddbe9ad0f\" placeholder=2></input> x,y,z\n<input size=2 ans=\"fa3fe463dd37844ba480e1f070aaeb87faeb787bab38964d016431a5c81ce1a4\" placeholder=3></input>\n\nassign x = <input size=2 ans=\"12ca2c442b28cfd03f6039b637cc5c61eafdc7836f6ebf3a09b703c2bd94bcec\" placeholder=4></input>;\nassign y = <input size=2 ans=\"703eabc8d6c8f2a8a3e79b5d929e61dbeb4dc5507b8e1a872ecf2935ff3b37eb\" placeholder=5></input>;\nassign z = <input size=2 ans=\"d2b9ff6d74028060823828ded628d0209f0f39c08e56b2bf0c6dae48b8dcfef6\" placeholder=6></input>;\n\nendmodule\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "0d3bec766d9e67f6263bb44d05b32d40165e895beb24a5cb6ddb50d99a68a3d5",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "2972caf382e2076f85a7c4f6e2c589ba75d57bdbb1ac9a84b6a3f18ddbe9ad0f",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "fa3fe463dd37844ba480e1f070aaeb87faeb787bab38964d016431a5c81ce1a4",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "12ca2c442b28cfd03f6039b637cc5c61eafdc7836f6ebf3a09b703c2bd94bcec",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "703eabc8d6c8f2a8a3e79b5d929e61dbeb4dc5507b8e1a872ecf2935ff3b37eb",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "d2b9ff6d74028060823828ded628d0209f0f39c08e56b2bf0c6dae48b8dcfef6",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 4,
+    "statement": "4",
+    "name": "Four Wires",
+    "knowledge_point": "",
+    "images": [
+      "Verilog_CH1_question4_img.png"
+    ],
+    "fl_raw": "module four_wires(  \ninput <input size=2 ans=\"8ddcd654757e72e89e315ba2fd18172b2cc5d2dd910420f79649c9afe0e6fc78\" placeholder=1></input>,y,<input size=2 ans=\"1008dc47be18bd069288e53910de6d70617aab775be1eddb1a3d2c045d4532f0\" placeholder=2></input>,\n<input size=2 ans=\"edfdb261d30455ae5fc1894079eb22c4fcebce9fde8a1ea110e653b0167835a9\" placeholder=3></input> w1,w2,w3,w4\n);\n\nassign <input size=2 ans=\"56fca9dc4cd6d32f2489ab832a9ab721536d659e0e860d8532d3112a74fd9d8a\" placeholder=4></input> = y;\nassign w2 = <input size=2 ans=\"240ab2ad2ba12b64684a28b7ccb173bae834fdcc57533fa9a21cb1cc1d8e596f\" placeholder=5></input>;\n<input size=2 ans=\"e21644ae192a8a87df24bcf962ce91208e1feb7e9c86378cea6c3da8992018fc\" placeholder=6></input> w3 = z;\nassign w4 = <input size=2 ans=\"43f6505a9cef8aa4d17b6dfc23e4195eb25040c2422c6627b46579cf4071ffe4\" placeholder=7></input>;\nendmodule\n\n\n1. Which keyword is used to declare ports in Verilog code that receive external signals?<input size=2 ans=\"7294b069ebc9bf316042138c6c5a65131816e4edeea57058a7bb410dd0ed4d4d\" placeholder=8></input>\n2. Which keyword is used to declare ports in Verilog code that sending signals to the external environment?<input size=2 ans=\"c48d3526873ea2e15472be416012f14afb995c53a89b7cc2df985090b96bf35f\" placeholder=9></input>\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "8ddcd654757e72e89e315ba2fd18172b2cc5d2dd910420f79649c9afe0e6fc78",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "1008dc47be18bd069288e53910de6d70617aab775be1eddb1a3d2c045d4532f0",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "edfdb261d30455ae5fc1894079eb22c4fcebce9fde8a1ea110e653b0167835a9",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "56fca9dc4cd6d32f2489ab832a9ab721536d659e0e860d8532d3112a74fd9d8a",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "240ab2ad2ba12b64684a28b7ccb173bae834fdcc57533fa9a21cb1cc1d8e596f",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "e21644ae192a8a87df24bcf962ce91208e1feb7e9c86378cea6c3da8992018fc",
+        "size": "2"
+      },
+      {
+        "index": 7,
+        "placeholder": "7",
+        "ans_hash": "43f6505a9cef8aa4d17b6dfc23e4195eb25040c2422c6627b46579cf4071ffe4",
+        "size": "2"
+      },
+      {
+        "index": 8,
+        "placeholder": "8",
+        "ans_hash": "7294b069ebc9bf316042138c6c5a65131816e4edeea57058a7bb410dd0ed4d4d",
+        "size": "2"
+      },
+      {
+        "index": 9,
+        "placeholder": "9",
+        "ans_hash": "c48d3526873ea2e15472be416012f14afb995c53a89b7cc2df985090b96bf35f",
+        "size": "2"
+      }
+    ],
+    "total_questions": 9
+  },
+  {
+    "id": 5,
+    "statement": "5",
+    "name": "Not Gate",
+    "knowledge_point": "The truth table:",
+    "images": [
+      "Verilog_CH1_question5_img1.png",
+      "Verilog_CH1_question5_img2.png"
+    ],
+    "fl_raw": "module not_gate(\n    <input size=2 ans=\"2f332fc32bac517bcba006ad728328ee38a141cfff835bbfb5a1a21a8af52226\" placeholder=1></input> a,\n    <input size=2 ans=\"446a1aefef0153fc3243983abfbffd037daadcbc8c48d4cf99aaaffad6994908\" placeholder=2></input> b\n);\n\n    <input size=2 ans=\"29d609efa82f0bf938caf252f669fa525720720bf4b95ce0be0af2af7f6bc528\" placeholder=3></input> b = ~a;\n\nendmodule\n\nWhat is the module name?<input size=2 ans=\"ed3295e12d54658318733ff328e8b6fb0f97604239f158019c2a6951ef8c5eb6\" placeholder=4></input>\nWhat is the symbol of the not operator in Verilog?<input size=2 ans=\"e2a421308396fd54f9574a29cdf2f48064e0059932b918dc55a62014f7611479\" placeholder=5></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "2f332fc32bac517bcba006ad728328ee38a141cfff835bbfb5a1a21a8af52226",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "446a1aefef0153fc3243983abfbffd037daadcbc8c48d4cf99aaaffad6994908",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "29d609efa82f0bf938caf252f669fa525720720bf4b95ce0be0af2af7f6bc528",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "ed3295e12d54658318733ff328e8b6fb0f97604239f158019c2a6951ef8c5eb6",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "e2a421308396fd54f9574a29cdf2f48064e0059932b918dc55a62014f7611479",
+        "size": "2"
+      }
+    ],
+    "total_questions": 5
+  },
+  {
+    "id": 6,
+    "statement": "6",
+    "name": "And Gate",
+    "knowledge_point": "The truth table:",
+    "images": [
+      "Verilog_CH1_question6_img1.png",
+      "Verilog_CH1_question6_img2.png"
+    ],
+    "fl_raw": "module and_gate(\n    input <input size=2 ans=\"b4be62a4a1683de8307987c5d0365c23608aafcb175cc8f0543f942656ceca70\" placeholder=1></input>,b,\n    <input size=2 ans=\"cff9c7f13000b133d4f76c1b8644122bd2c613766078913f2d8e6d6407f4921d\" placeholder=2></input> c\n);\n\n    <input size=2 ans=\"78cd747c67e6e204b818b0ccd871711384bfe9445b487e2643611971edf51ce9\" placeholder=3></input> c = a & b;\n\nendmodule\n\nWhat is the module name?<input size=2 ans=\"27071d97667f759b2ec0d4201ad3db7ba86b1034964c49106374e80bbc6fea34\" placeholder=4></input>\nWhat is the symbol of the and operator in Verilog?<input size=2 ans=\"0369efe38e8f0a6c58133967244e9b3f397e3f0f2db7f4d10569bce4f2487396\" placeholder=5></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "b4be62a4a1683de8307987c5d0365c23608aafcb175cc8f0543f942656ceca70",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "cff9c7f13000b133d4f76c1b8644122bd2c613766078913f2d8e6d6407f4921d",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "78cd747c67e6e204b818b0ccd871711384bfe9445b487e2643611971edf51ce9",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "27071d97667f759b2ec0d4201ad3db7ba86b1034964c49106374e80bbc6fea34",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "0369efe38e8f0a6c58133967244e9b3f397e3f0f2db7f4d10569bce4f2487396",
+        "size": "2"
+      }
+    ],
+    "total_questions": 5
+  },
+  {
+    "id": 7,
+    "statement": "7",
+    "name": "Or Gate",
+    "knowledge_point": "The truth table:",
+    "images": [
+      "Verilog_CH1_question7_img1.png",
+      "Verilog_CH1_question7_img2.png"
+    ],
+    "fl_raw": "<input size=2 ans=\"44bcef98136d2a55e5d83f0735141f137275d853d57aab9be8879aacb00e3ad8\" placeholder=1></input> or_gate(\n    input a,b,\n    output <input size=2 ans=\"7d3dc2bde183038e91d96999efb617578246f002b298fda5619521b81811014e\" placeholder=2></input>\n<input size=2 ans=\"dc30b93872dd3cbca7fc08d3f2e3e7eb5998d2bbb038680e31b6a4f73381b43a\" placeholder=3></input>;\n\n    assign c = a | b<input size=2 ans=\"cc65b944f0c9151ad2bcc18462b63ffe1ac73f16802c2738ae5ccb004d2a6dd3\" placeholder=4></input>\n\nendmodule\n\nWhat is the module name?<input size=2 ans=\"b5c880dd2f0e98dfcc17ad149c1a3d83bbec06cef3264fc099d4360f9992d5f5\" placeholder=5></input>\nWhat is the symbol of the or operator in Verilog?<input size=2 ans=\"a23e01848af008c0893510aae1c8a14a90cfc2b536f51d6fdcd3cda3ef28a5d9\" placeholder=6></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "44bcef98136d2a55e5d83f0735141f137275d853d57aab9be8879aacb00e3ad8",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "7d3dc2bde183038e91d96999efb617578246f002b298fda5619521b81811014e",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "dc30b93872dd3cbca7fc08d3f2e3e7eb5998d2bbb038680e31b6a4f73381b43a",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "cc65b944f0c9151ad2bcc18462b63ffe1ac73f16802c2738ae5ccb004d2a6dd3",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "b5c880dd2f0e98dfcc17ad149c1a3d83bbec06cef3264fc099d4360f9992d5f5",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "a23e01848af008c0893510aae1c8a14a90cfc2b536f51d6fdcd3cda3ef28a5d9",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 8,
+    "statement": "8",
+    "name": "Xor Gate",
+    "knowledge_point": "The truth table:",
+    "images": [
+      "Verilog_CH1_question8_img1.png",
+      "Verilog_CH1_question8_img2.png"
+    ],
+    "fl_raw": "module xor_gate<input size=2 ans=\"a42a4511e5178a337c223f822c1cb345c50af113df50139bc47a16574f9db22c\" placeholder=1></input>\n    input a,b,\n    output c\n)<input size=2 ans=\"ecd6e91ba42c29448d52b44a1c46ae893e14053578388a6018669422e795d022\" placeholder=2></input>\n\n    <input size=2 ans=\"9b35cf7e4c6795e1b901c2836da3750e5235d531a727604de964895b5f98e943\" placeholder=3></input> c = a ^ b;\n\n<input size=2 ans=\"496f805e2f3862ae845be051144c940d69c755337935426b7e77933af3900e5a\" placeholder=4></input>\n\nWhat is the module name?<input size=2 ans=\"8d72ad356d913fc058264eb3fbf5e380622ad5e64a84bb9b16a83174732a18d3\" placeholder=5></input>\nWhat is the symbol of the xor operator in Verilog?<input size=2 ans=\"0858efbd62fc999303320c83a8c6cf7b3a0b1f360bd0fe049502240848b15fd7\" placeholder=6></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "a42a4511e5178a337c223f822c1cb345c50af113df50139bc47a16574f9db22c",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "ecd6e91ba42c29448d52b44a1c46ae893e14053578388a6018669422e795d022",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "9b35cf7e4c6795e1b901c2836da3750e5235d531a727604de964895b5f98e943",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "496f805e2f3862ae845be051144c940d69c755337935426b7e77933af3900e5a",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "8d72ad356d913fc058264eb3fbf5e380622ad5e64a84bb9b16a83174732a18d3",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "0858efbd62fc999303320c83a8c6cf7b3a0b1f360bd0fe049502240848b15fd7",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 9,
+    "statement": "9",
+    "name": "DFF",
+    "knowledge_point": "Knowledeg point:\nA D Flip-Flop (DFF) stores the value of the data input (D) on the rising edge of the clock (Clk) and holds this value until the next clock edge or a reset occurs.\n\nKey Components:\nData Input (D): The value to be stored.\nClock (Clk): Triggers data storage on the rising edge.\nOutput (Q): Holds the stored value.",
+    "images": [
+      "Verilog_CH1_question9_img.png"
+    ],
+    "fl_raw": "module DFF(\n    <input size=2 ans=\"70f0375c987eeb81f1d2612e70a97b5a63ddec5f5226aed96f8922019bab0012\" placeholder=1></input> Clk,\n    <input size=2 ans=\"c7b072e344d0f86bb004406891f6b8aae9ee1c8232e72eca27793bcb0702f5b2\" placeholder=2></input> D,\n    <input size=2 ans=\"d9c9e80b8c87a948d53619d9bf9f30adb8e7a0b1fc29cc2c7b6ace816e350963\" placeholder=3></input> reg Q\n);\n    always @ (posedge Clk)begin\n        Q <= D;\n    end\n\nendmodule\n\nWhat is the module name?<input size=2 ans=\"46162f9591f6799fb562726f0290add67a8b4f5079477c65db8f60e00af2c59b\" placeholder=4></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "70f0375c987eeb81f1d2612e70a97b5a63ddec5f5226aed96f8922019bab0012",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "c7b072e344d0f86bb004406891f6b8aae9ee1c8232e72eca27793bcb0702f5b2",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "d9c9e80b8c87a948d53619d9bf9f30adb8e7a0b1fc29cc2c7b6ace816e350963",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "46162f9591f6799fb562726f0290add67a8b4f5079477c65db8f60e00af2c59b",
+        "size": "2"
+      }
+    ],
+    "total_questions": 4
+  },
+  {
+    "id": 10,
+    "statement": "10",
+    "name": "\"Always\" Example",
+    "knowledge_point": "Edge-Triggered Explanation: \nEdge-triggered blocks are triggered on a specific \tedge (rising or falling) of a clock or signal.\n\n\nSignal-Triggered Explanation: \nSignal-triggered blocks are triggered whenever \tthere is a change in the specified signals.",
+    "images": [
+      "Verilog_CH1_question10_img1.png",
+      "Verilog_CH1_question10_img2.png"
+    ],
+    "fl_raw": "module always_example<input size=2 ans=\"d24b520f797591f94cafb201ba7f0ef5c314a664b4ac1599bfa25eb069f4b965\" placeholder=1></input>\n    input  clk,    \n    input  a, b,\n    output <input size=2 ans=\"817b0046124f0927dc06485ff3d746a53035349230d9e132ad1a9781a7aea66a\" placeholder=2></input> q,y\n<input size=2 ans=\"dab641d5fc8a00406e272ae7f6878e12fe92f108129dc7c346d1308b9a717d15\" placeholder=3></input>\n    // Edge-Triggered always block \n    always <input size=2 ans=\"b3f00b3403dcc4b519ac5020ea37937f8e0261f2c223a2d91073b650b2b78d76\" placeholder=4></input>(posedge <input size=2 ans=\"8ccea789c4c89933f8e02023bb52fcdc4d4d970ac658679263d07bc0cd56e43a\" placeholder=5></input>) begin\n       q <= a;\n    end\n\n    // Signal-Triggered always block \n    <input size=2 ans=\"c40837445fa95ab7c385bacf0769439b3fa28f95666dd5c5fc7a74bac3c5c415\" placeholder=6></input> @(a or b) begin\n        y = a & b; \n    end\n\nendmodule\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "d24b520f797591f94cafb201ba7f0ef5c314a664b4ac1599bfa25eb069f4b965",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "817b0046124f0927dc06485ff3d746a53035349230d9e132ad1a9781a7aea66a",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "dab641d5fc8a00406e272ae7f6878e12fe92f108129dc7c346d1308b9a717d15",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "b3f00b3403dcc4b519ac5020ea37937f8e0261f2c223a2d91073b650b2b78d76",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "8ccea789c4c89933f8e02023bb52fcdc4d4d970ac658679263d07bc0cd56e43a",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "c40837445fa95ab7c385bacf0769439b3fa28f95666dd5c5fc7a74bac3c5c415",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 11,
+    "statement": "11",
+    "name": "\"Always\" Block Compare",
+    "knowledge_point": "The output signal in always block must be declared as type reg.",
+    "images": [
+      "Verilog_CH1_question11_img1.png",
+      "Verilog_CH1_question11_img2.png"
+    ],
+    "fl_raw": "//circuit 1\nmodule edge_clk (\n    input clk,\n    input  a,\n    output <input size=2 ans=\"b1d70f26c70c85e928ab8cb4cf6caf621383c2480aed2d918e3c97d8fb37f187\" placeholder=1></input> b\n);\n\n    always <input size=2 ans=\"6d6c40fa5cbe6ce85f77ed5a1fbc796d67e0ecd09c293d62e5f61e5a2021539c\" placeholder=2></input>(posedge clk) <input size=2 ans=\"7f99dbf190f6d1f14793c62f74759d2239108b0eda96e5a76aa2bada5a04a5cf\" placeholder=3></input>\n\tb <= a;\n    end\n<input size=2 ans=\"971534382f88ee8d501748cccc8b0a5fadae8f3d74116b237fc6e1f98a443205\" placeholder=4></input>\n\n\n//circuit 2\n<input size=2 ans=\"50557005e0b2200c75db963bf860c7b553153f630477fbfa4906ccf24c17f447\" placeholder=5></input> signal(\n    input a,\n    output <input size=2 ans=\"4c61e1e64228edb8b6de1b86d95bb69903b7c594db1fbc51feb3f700b07fd7e2\" placeholder=6></input> b\n);\n\n    <input size=2 ans=\"ac07de295d059fb55e4a707cfc9503d4d04f1368f63d71fdcc1f1a10d5d67113\" placeholder=7></input> @(*) begin\n        b = a;\n    <input size=2 ans=\"25458c9ae4a35a5e1b07c8d1b1af138ef2ff681e9b2a7dcc0ae6e0a721ac6545\" placeholder=8></input>\n\nendmodule\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "b1d70f26c70c85e928ab8cb4cf6caf621383c2480aed2d918e3c97d8fb37f187",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "6d6c40fa5cbe6ce85f77ed5a1fbc796d67e0ecd09c293d62e5f61e5a2021539c",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "7f99dbf190f6d1f14793c62f74759d2239108b0eda96e5a76aa2bada5a04a5cf",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "971534382f88ee8d501748cccc8b0a5fadae8f3d74116b237fc6e1f98a443205",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "50557005e0b2200c75db963bf860c7b553153f630477fbfa4906ccf24c17f447",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "4c61e1e64228edb8b6de1b86d95bb69903b7c594db1fbc51feb3f700b07fd7e2",
+        "size": "2"
+      },
+      {
+        "index": 7,
+        "placeholder": "7",
+        "ans_hash": "ac07de295d059fb55e4a707cfc9503d4d04f1368f63d71fdcc1f1a10d5d67113",
+        "size": "2"
+      },
+      {
+        "index": 8,
+        "placeholder": "8",
+        "ans_hash": "25458c9ae4a35a5e1b07c8d1b1af138ef2ff681e9b2a7dcc0ae6e0a721ac6545",
+        "size": "2"
+      }
+    ],
+    "total_questions": 8
+  },
+  {
+    "id": 12,
+    "statement": "12",
+    "name": "Combinational",
+    "knowledge_point": "Combinational Logic:\n\nDefinition: \n\u30fbCombinational logic produces outputs based solely on the current inputs without any memory of past inputs. The output changes immediately when the input changes.\n\nKey Characteristics:\n\u30fbNo memory or storage elements.\n\u30fbOutput is a direct function of the current inputs.\n\u30fbTypically implemented using wire and assign statements in Verilog.",
+    "images": [
+      "Verilog_CH1_question12_img.png"
+    ],
+    "fl_raw": "module combinational(\n    input <input size=2 ans=\"a3d1dae43903c3a841688864c19c343180d77dba00921920c46aacb7463fac95\" placeholder=1></input>,b,\n    output <input size=2 ans=\"52ab68a93aa2dedc8d2b53c390a15fcb169f0402bea90aebe084da5734b8224a\" placeholder=2></input> c\n);\n\n<input size=2 ans=\"bacb9351837346095246477085f53f7bcfd7300bd5a7b79558038b79625f034d\" placeholder=3></input> c = a <input size=2 ans=\"56f4176e7735d7f301404cea720e8ea3f6423afb4aa8dd11aee9df564f4db421\" placeholder=4></input> b;\n\n<input size=2 ans=\"48067f4a645539da70c85f4adf9be7e9399c36934367b4d43838f9c92f8e5620\" placeholder=5></input>\n\n\n1. What is the module name?<input size=2 ans=\"cc85e36aec1c95d211d65910ed985b46071d7f821ad732f6126ce0e97f202992\" placeholder=6></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "a3d1dae43903c3a841688864c19c343180d77dba00921920c46aacb7463fac95",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "52ab68a93aa2dedc8d2b53c390a15fcb169f0402bea90aebe084da5734b8224a",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "bacb9351837346095246477085f53f7bcfd7300bd5a7b79558038b79625f034d",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "56f4176e7735d7f301404cea720e8ea3f6423afb4aa8dd11aee9df564f4db421",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "48067f4a645539da70c85f4adf9be7e9399c36934367b4d43838f9c92f8e5620",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "cc85e36aec1c95d211d65910ed985b46071d7f821ad732f6126ce0e97f202992",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 13,
+    "statement": "13",
+    "name": "Sequential",
+    "knowledge_point": "Definition: \n\u30fbSequential logic produces outputs based on both the current inputs and the past states of the system. It includes memory elements that store the state information.\n\nKey Characteristics:\n\u30fbHas memory or storage elements\n  (e.g., flip-flops, registers).\n\u30fbOutput depends on both current inputs and stored states.\n\u30fbTypically implemented using reg and always blocks in Verilog.",
+    "images": [
+      "Verilog_CH1_question13_img.png"
+    ],
+    "fl_raw": "<input size=2 ans=\"bff26559d41228412c7db5c9f5f12f7d393050bdec97ff345739d1b3c850fbde\" placeholder=1></input> sequential(\n    input a,b,<input size=2 ans=\"7d31a8d6c58cac7e89a9b3e6646364abc123b4e824608e869f9f9f23ffc4e2c4\" placeholder=2></input>,\n    output <input size=2 ans=\"36d80508898a5030800ae529d793d39667191bc07092da69768a47e00da80d25\" placeholder=3></input> c\n);\n\n<input size=2 ans=\"5e8f389c297fb9af6520fdc321c0bbe94d06c17b03937595565a5e68cfaa548a\" placeholder=4></input>@(posedge clk)begin\n        <input size=2 ans=\"e2a13b370365e8361af018d336551bc5bea83a762b9f90493417f62272184050\" placeholder=5></input> <= a <input size=2 ans=\"303cc19b8bc0ae2fd7c3c07f364b75bc42e155d8d50b7028e2d1a5692ee787ad\" placeholder=6></input> b;\n    end\nendmodule\n\nWhat is the module name?<input size=2 ans=\"a4fc28068b10f12a9e02c840e63312ec127fdc233317ac94510d4d16746e95a4\" placeholder=7></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "bff26559d41228412c7db5c9f5f12f7d393050bdec97ff345739d1b3c850fbde",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "7d31a8d6c58cac7e89a9b3e6646364abc123b4e824608e869f9f9f23ffc4e2c4",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "36d80508898a5030800ae529d793d39667191bc07092da69768a47e00da80d25",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "5e8f389c297fb9af6520fdc321c0bbe94d06c17b03937595565a5e68cfaa548a",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "e2a13b370365e8361af018d336551bc5bea83a762b9f90493417f62272184050",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "303cc19b8bc0ae2fd7c3c07f364b75bc42e155d8d50b7028e2d1a5692ee787ad",
+        "size": "2"
+      },
+      {
+        "index": 7,
+        "placeholder": "7",
+        "ans_hash": "a4fc28068b10f12a9e02c840e63312ec127fdc233317ac94510d4d16746e95a4",
+        "size": "2"
+      }
+    ],
+    "total_questions": 7
+  },
+  {
+    "id": 14,
+    "statement": "14",
+    "name": "Combinational Example",
+    "knowledge_point": "",
+    "images": [
+      "Verilog_CH1_question14_img.png"
+    ],
+    "fl_raw": "module combinational_example (\n    input  a, \n    input  b,   \n    output reg c  \n);\n    always @(*) begin\n        c = a | b;   \n    end\n\nendmodule\n\n\n1.What is the data type of c?<input size=2 ans=\"e42146cb5d5746b8c8311d5d71860bbdaee01f29bb3c3f08e3193d0cb051002b\" placeholder=1></input>\n2.What is the module name?<input size=2 ans=\"bd1a8edf687f21c7529149d4810464443d44e876c69b6a42574db950248f1c96\" placeholder=2></input>\n3.If a = 0, b = 1,what is c?<input size=2 ans=\"a183251a8414fd819da06488541d523365d51a7d0d942e272c2dce108f6dcdae\" placeholder=3></input>\n4. How many inputs are in this circuit?<input size=2 ans=\"db6529e972a44a4db65c3f460fe66b7313138626d813d03fc7942eaa55327001\" placeholder=4></input>\n5.What is the operator between a ,b (&,|,^)?<input size=2 ans=\"b92362f48db76de31009cf4bbaefc78486dcd390913bf0cbf4955c3183ae65f0\" placeholder=5></input>\n6. Is the logic in this module synchronous or asynchronous?<input size=2 ans=\"85725ff788ad86281fd8f4b043bd41a31ca7a82e987794f4732616ed7ba63bb9\" placeholder=6></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "e42146cb5d5746b8c8311d5d71860bbdaee01f29bb3c3f08e3193d0cb051002b",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "bd1a8edf687f21c7529149d4810464443d44e876c69b6a42574db950248f1c96",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "a183251a8414fd819da06488541d523365d51a7d0d942e272c2dce108f6dcdae",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "db6529e972a44a4db65c3f460fe66b7313138626d813d03fc7942eaa55327001",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "b92362f48db76de31009cf4bbaefc78486dcd390913bf0cbf4955c3183ae65f0",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "85725ff788ad86281fd8f4b043bd41a31ca7a82e987794f4732616ed7ba63bb9",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 15,
+    "statement": "15",
+    "name": "Sequential Example",
+    "knowledge_point": "",
+    "images": [
+      "Verilog_CH1_question15_img.png"
+    ],
+    "fl_raw": "module sequential_example (\n    input clk,  \n    input reset, \n    input  a, \n    input  b, \n    output reg  c\n);\nalways @(posedge clk or posedge reset) begin\n        if (reset)\n            c <= 0;   \n        else\n            c <= a & b; \n    end\n\nendmodule\n\n\n1.What is the data type of c?<input size=2 ans=\"8bb8970e187057ec83bd66195d80ec49a37340eeb5714836af050068491cc3d0\" placeholder=1></input>\n2.What is the module name?<input size=2 ans=\"eb3cfc9126921d1e108a38543d9bd7a1e7508c4332ec3e7d2b3aaf95c8ab06b9\" placeholder=2></input>\n3.If a = 0, b = 1,what is c?<input size=2 ans=\"62c2b1c3145f7edc4100e7a9466a5644dfa24ea5679e4cde9c904ba9c12f9a36\" placeholder=3></input>\n4. How many inputs are in this circuit?<input size=2 ans=\"41ef109e70a58a12aa884a2719d7be88497d7b1b378950dab1c53b9227f4f4ad\" placeholder=4></input>\n5.What is the operator between a ,b (&,|,^)?<input size=2 ans=\"8d639eb0fcf604b08f1564a72aaba5103e56f1f0707df5a053258ed858613eff\" placeholder=5></input>\n6. Is the logic in this module synchronous or asynchronous?<input size=2 ans=\"eece5c82074a16781bbffb5713e6aaac344dad6f8771ba439a077d55e607746a\" placeholder=6></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "8bb8970e187057ec83bd66195d80ec49a37340eeb5714836af050068491cc3d0",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "eb3cfc9126921d1e108a38543d9bd7a1e7508c4332ec3e7d2b3aaf95c8ab06b9",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "62c2b1c3145f7edc4100e7a9466a5644dfa24ea5679e4cde9c904ba9c12f9a36",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "41ef109e70a58a12aa884a2719d7be88497d7b1b378950dab1c53b9227f4f4ad",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "8d639eb0fcf604b08f1564a72aaba5103e56f1f0707df5a053258ed858613eff",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "eece5c82074a16781bbffb5713e6aaac344dad6f8771ba439a077d55e607746a",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 16,
+    "statement": "16",
+    "name": "Wire and Reg 1",
+    "knowledge_point": "`wire`: Used for combinational logic and signal connections, cannot store values, driven by `assign` statements.\n`reg`: Used for sequential logic, can store values, assigned within always blocks.\n\nReminders:\n\u30fbVariables assigned within an always block must be of type reg.\n\u30fbIf a signal is not explicitly declared as wire or reg, it defaults to wire.",
+    "images": [
+      "Verilog_CH1_question16_img1.png",
+      "Verilog_CH1_question16_img1.png"
+    ],
+    "fl_raw": "1. Signals assigned values within an always block must be declared as reg. (T/F)<input size=2 ans=\"e7e2575aae0eb1d16960216b8305cea6fd2503c22cc9b4849e6463bd99ed8571\" placeholder=1></input>\n2. The default type for signals not explicitly declared in Verilog is reg. (T/F)<input size=2 ans=\"252ae5ff9702bc62702cfd92064346fbb0eb4af0440b89f07cf3af199ae6536f\" placeholder=2></input>\n3. An assign statement should only be used with signals declared as reg. (T/F)<input size=2 ans=\"4e6de0cc0cd37e038bc44720bca47927cae300c83f0811065928897ca92ccf5b\" placeholder=3></input>\n4. A signal that changes in response to a clock edge should be declared as reg. (T/F)<input size=2 ans=\"1e5fec33548acc2b0961a181d926b21aea2df17398fbfe687760cca3eb7756be\" placeholder=4></input>\n5. In combinational logic, signals in the sensitivity list are typically declared as wire.(T/F)<input size=2 ans=\"1ca962a7ff4c5716f755acc10dd7c8d7b6ca75fedd3aada64180d48593e127af\" placeholder=5></input>\n \n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "e7e2575aae0eb1d16960216b8305cea6fd2503c22cc9b4849e6463bd99ed8571",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "252ae5ff9702bc62702cfd92064346fbb0eb4af0440b89f07cf3af199ae6536f",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "4e6de0cc0cd37e038bc44720bca47927cae300c83f0811065928897ca92ccf5b",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "1e5fec33548acc2b0961a181d926b21aea2df17398fbfe687760cca3eb7756be",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "1ca962a7ff4c5716f755acc10dd7c8d7b6ca75fedd3aada64180d48593e127af",
+        "size": "2"
+      }
+    ],
+    "total_questions": 5
+  },
+  {
+    "id": 17,
+    "statement": "17",
+    "name": "Wire and Reg 2",
+    "knowledge_point": "`wire`: Used for combinational logic and signal connections, cannot store values, driven by `assign` statements.\n`reg`: Used for sequential logic, can store values, assigned within always blocks.\n\nReminders:\n\u30fbVariables assigned within an always block must be of type reg.\n\u30fbIf a signal is not explicitly declared as wire or reg, it defaults to wire.",
+    "images": [
+      "Verilog_CH1_question17_img1.png",
+      "Verilog_CH1_question17_img2.png"
+    ],
+    "fl_raw": "Please select one of \"reg\" and \"wire\" and fill in the spaces below.\n\n1. In an always block, variables assigned values must be declared as <input size=2 ans=\"cc6f97635a594480fbd6aabf4c90e02d0283f479625411889a948d2d82c2323c\" placeholder=1></input>.\n2. The default type for undeclared signals in Verilog is <input size=2 ans=\"5cfef0ba447a05ae200784f66eb1e758236fd23b46f45af1d446cac9e0dcd851\" placeholder=2></input>.\n3. For combinational logic described using an assign statement, the output signal should be declared as <input size=2 ans=\"51edf4b60b2079722ce8c86215e4de5b6046682be671aefd1e4ef77a9cc63db7\" placeholder=3></input>.\n4. To store the state in a flip-flop or register, the signal type should be <input size=2 ans=\"3cf758ad1262fac5e622c096b5897207bd26e1c3c8a2f177b60663316fbdcdd3\" placeholder=4></input>.\n5. In a sensitivity list for combinational logic, signals that are part of the condition must be of type <input size=2 ans=\"40593bea066f5b640af091969c8c859d4f67af92d79e156f1f1f87babcb8b713\" placeholder=5></input>.\n6. When you need to hold a value across clock cycles, the signal must be declared as <input size=2 ans=\"6bab984e627819adb32b1fa319d6b015e67ae26ed1cec5ff827331abfad449c7\" placeholder=6></input>.\n7. For a multiplexer output defined using an always @(*) block, the output should be declared as <input size=2 ans=\"27cdfbb825452df4b5501832aae5e82503a354656928176522fb8e3016db21e9\" placeholder=7></input>.\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "cc6f97635a594480fbd6aabf4c90e02d0283f479625411889a948d2d82c2323c",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "5cfef0ba447a05ae200784f66eb1e758236fd23b46f45af1d446cac9e0dcd851",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "51edf4b60b2079722ce8c86215e4de5b6046682be671aefd1e4ef77a9cc63db7",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "3cf758ad1262fac5e622c096b5897207bd26e1c3c8a2f177b60663316fbdcdd3",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "40593bea066f5b640af091969c8c859d4f67af92d79e156f1f1f87babcb8b713",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "6bab984e627819adb32b1fa319d6b015e67ae26ed1cec5ff827331abfad449c7",
+        "size": "2"
+      },
+      {
+        "index": 7,
+        "placeholder": "7",
+        "ans_hash": "27cdfbb825452df4b5501832aae5e82503a354656928176522fb8e3016db21e9",
+        "size": "2"
+      }
+    ],
+    "total_questions": 7
+  },
+  {
+    "id": 18,
+    "statement": "18",
+    "name": "Wire and Reg 3",
+    "knowledge_point": "These two modules have the same functionality but are expressed differently.",
+    "images": [
+      "Verilog_CH1_question18_img1.png",
+      "Verilog_CH1_question18_img2.png",
+      "Verilog_CH1_question18_img3.png"
+    ],
+    "fl_raw": "module wire_reg(\n    input a,\n    input b,\n    output <input size=2 ans=\"f43cc40b433bc08a0a64ac1c062d82896eb64f90edd705bf730fc1cd9421e9f6\" placeholder=1></input> c,\n    output <input size=2 ans=\"b4ec6b76f1b24933ba2166b9678546cdd8137699292363b106f9f362fa4bf61f\" placeholder=2></input> d\n);\n    <input size=2 ans=\"48cbc0dc83a89c9e3b28617d2d29c8476e0cfecc64a832e2606711a27499a0d8\" placeholder=3></input> c = a;\n\n    <input size=2 ans=\"53a7a6d16dfb737b98e3be48c16964ec547ef56707722562afdbe9e7caf13b23\" placeholder=4></input> @(*)begin\n        d = b;\n    <input size=2 ans=\"934ca681216a4a0c5a18ee103ace11026a17e74334a5bfc1be3bae7aa486ab28\" placeholder=5></input>\nendmodule\n\n1. What is the module name?<input size=2 ans=\"7d6d0533a1a6c2322d9e75dac57ccae0474538a2af9490d5bfe6112ac01097d2\" placeholder=6></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "f43cc40b433bc08a0a64ac1c062d82896eb64f90edd705bf730fc1cd9421e9f6",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "b4ec6b76f1b24933ba2166b9678546cdd8137699292363b106f9f362fa4bf61f",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "48cbc0dc83a89c9e3b28617d2d29c8476e0cfecc64a832e2606711a27499a0d8",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "53a7a6d16dfb737b98e3be48c16964ec547ef56707722562afdbe9e7caf13b23",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "934ca681216a4a0c5a18ee103ace11026a17e74334a5bfc1be3bae7aa486ab28",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "7d6d0533a1a6c2322d9e75dac57ccae0474538a2af9490d5bfe6112ac01097d2",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 19,
+    "statement": "19",
+    "name": "Design Level",
+    "knowledge_point": "",
+    "images": [],
+    "fl_raw": "//circuit 1\nmodule gate (\n    input wire a,\n    input wire b,\n    output wire y\n);\n    and (y, a, b); \nendmodule\n\n\n//circuit 2\nmodule dataflow (\n    input wire a,\n    input wire b,\n    output wire y\n);\n    assign y = a & b; \nendmodule\n\n\n// circuit 3\nmodule behavioral (\n    input wire a,\n    input wire b,\n    output reg y\n);\n    always @(*) begin\n        y = a & b; \n    end\nendmodule\n\n\n1. What is the module name in first module?<input size=2 ans=\"65fbd054f703b5861ca948c16153993bdde3778a4654ad0fc37b21232ff62d49\" placeholder=1></input>\n2. What is the module name in second module?<input size=2 ans=\"e73ae95ff4d5cc93e8eda6c665466180d9cb84c3414ecaac481f85662426eb2d\" placeholder=2></input>\n3. What is the module name in third module?<input size=2 ans=\"66ed4ce0c64b09d59c70626346ae5d3d037f487a4ee3911eb28bb385a59cdac8\" placeholder=3></input>\n4. Which data type is used in the first module for output \"y\"?<input size=2 ans=\"a6efe540e4965c885639d32e3550f158e7c0d6e0ed8a5d3f9c17af2fc537bc9c\" placeholder=4></input>\n5. Which data type is used in the second module for output \"y\"?<input size=2 ans=\"d242d0bd9c287fef01dd591efe7db1bd0fb9532ce68e159ed22a0e7cf7fd425f\" placeholder=5></input>\n6. Which data type is used in the third module for output \"y\"?<input size=2 ans=\"541eee5b2b5b00ed9aae9073d9ca9c3c60bff0356f1c49f055eca93e8ee9bc1d\" placeholder=6></input>\n\n\n<!-- ",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "65fbd054f703b5861ca948c16153993bdde3778a4654ad0fc37b21232ff62d49",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "e73ae95ff4d5cc93e8eda6c665466180d9cb84c3414ecaac481f85662426eb2d",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "66ed4ce0c64b09d59c70626346ae5d3d037f487a4ee3911eb28bb385a59cdac8",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "a6efe540e4965c885639d32e3550f158e7c0d6e0ed8a5d3f9c17af2fc537bc9c",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "d242d0bd9c287fef01dd591efe7db1bd0fb9532ce68e159ed22a0e7cf7fd425f",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "541eee5b2b5b00ed9aae9073d9ca9c3c60bff0356f1c49f055eca93e8ee9bc1d",
+        "size": "2"
+      }
+    ],
+    "total_questions": 6
+  },
+  {
+    "id": 20,
+    "statement": "20",
+    "name": "Design Level Example 1",
+    "knowledge_point": "",
+    "images": [
+      "Verilog_CH1_question20_img.png"
+    ],
+    "fl_raw": "module gate (\n    input a,\n    <input size=2 ans=\"77adccfbb9bc93d3744d97280878d658786844c48a8c550569ad7b452585db92\" placeholder=1></input> b,\n    output y\n);\n    <input size=2 ans=\"7d2a800b432cefe0b0d2892f6ee096cb4ee5f7df55bf86abb5c2c9e864103cd9\" placeholder=2></input> (y, a, b); \nendmodule\n\n1. Which design level is used in this module? (gate, dataflow, behavioral) <input size=2 ans=\"ad22bc11a3004a15b12fd7e24460cdc6f45f90280ebd22d40010f1eee1697d9a\" placeholder=3></input>\n2. What is the module name in this module?<input size=2 ans=\"e47549bedee5a14fe28e952ef2ab3115dd96611e99374bdcd1573a09c9312c45\" placeholder=4></input>\n3. Which keyword is used to declare ports in Verilog code that receive external signals?<input size=2 ans=\"66fd34dc6ed1c871a7d02a9c9f9c76e8dc419ff5ddfa38b3bf17e2884b193f86\" placeholder=5></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "77adccfbb9bc93d3744d97280878d658786844c48a8c550569ad7b452585db92",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "7d2a800b432cefe0b0d2892f6ee096cb4ee5f7df55bf86abb5c2c9e864103cd9",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "ad22bc11a3004a15b12fd7e24460cdc6f45f90280ebd22d40010f1eee1697d9a",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "e47549bedee5a14fe28e952ef2ab3115dd96611e99374bdcd1573a09c9312c45",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "66fd34dc6ed1c871a7d02a9c9f9c76e8dc419ff5ddfa38b3bf17e2884b193f86",
+        "size": "2"
+      }
+    ],
+    "total_questions": 5
+  },
+  {
+    "id": 21,
+    "statement": "21",
+    "name": "Design Level Example 2",
+    "knowledge_point": "",
+    "images": [
+      "Verilog_CH1_question21_img.png"
+    ],
+    "fl_raw": "module example2 (\n    <input size=2 ans=\"c60ff1657404136f879e06f12eabad53dc91cfc9bff894c4a2b75068d02df3f4\" placeholder=1></input>  a, b,\n    <input size=2 ans=\"ec08dcaf8fbf34c2bc1a5cd8ecac5d07d9432a944970bf8aebf7ff6384828818\" placeholder=2></input>  y\n);\n    <input size=2 ans=\"0b5c47d296957bc194f3e1406ad2ceb483e6f795461707e11209695efeaac345\" placeholder=3></input> y = a [blank1] b; \nendmodule\n\n1. Which design level is used in this module? (gate, dataflow, behavioral) <input size=2 ans=\"e699fc95dc30577ead71e28bd7b931078640139fc3d78d725e0542416c513b91\" placeholder=4></input>\n2. For the [blank1], which operation is use for a and b to output y?(|,&,^) <input size=2 ans=\"544a078791c55ac8a983ff2d35b25bcc7f3200bd5bdd46d28c4022474184a4c0\" placeholder=5></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "c60ff1657404136f879e06f12eabad53dc91cfc9bff894c4a2b75068d02df3f4",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "ec08dcaf8fbf34c2bc1a5cd8ecac5d07d9432a944970bf8aebf7ff6384828818",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "0b5c47d296957bc194f3e1406ad2ceb483e6f795461707e11209695efeaac345",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "e699fc95dc30577ead71e28bd7b931078640139fc3d78d725e0542416c513b91",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "544a078791c55ac8a983ff2d35b25bcc7f3200bd5bdd46d28c4022474184a4c0",
+        "size": "2"
+      }
+    ],
+    "total_questions": 5
+  },
+  {
+    "id": 22,
+    "statement": "22",
+    "name": "Design Level Example 3",
+    "knowledge_point": "",
+    "images": [
+      "Verilog_CH1_question22_img.png"
+    ],
+    "fl_raw": "module example3 (\n    input  x,<input size=2 ans=\"4d12cc71d9ce31cb74cdd4a34d98cddabac74e8a46b34d4ddd22efec7dbbba6a\" placeholder=1></input>,\n    output <input size=2 ans=\"b27717001d12f0b7cb0ddaca1a95b2027e704c17b4703775ed7e68416de44f08\" placeholder=2></input> z\n);\n    always <input size=2 ans=\"a3304102ea903c18ec7a8fa350078050530e501604a4d46d8416d0000bd758e4\" placeholder=3></input>(<input size=2 ans=\"9ae10f06940c765f130caf52ebca92553f5b0dce9ff23ab9eff8b93bb1a2ad19\" placeholder=4></input>)begin\n          <input size=2 ans=\"9e8e35482de973c74563cc0c2bb184a1812a4c16ca6af23108f17c257c0b5580\" placeholder=5></input> = x [blank1] y;\n    end\nendmodule\n\n1. Which design level is used in this module? (gate, dataflow, behavioral) <input size=2 ans=\"00c3b8c0244fc5aba1eeacd396d647337a8e8c4a61fbff2e3d649fd2b30dce78\" placeholder=6></input>\n2. For the [blank1], which operation is use for a and b to output y?(|,&,^) <input size=2 ans=\"3fda08993280856714fa7f503781a92cc5aeb104e536ece83ed327d94958b94f\" placeholder=7></input>\n\n\n",
+    "inputs": [
+      {
+        "index": 1,
+        "placeholder": "1",
+        "ans_hash": "4d12cc71d9ce31cb74cdd4a34d98cddabac74e8a46b34d4ddd22efec7dbbba6a",
+        "size": "2"
+      },
+      {
+        "index": 2,
+        "placeholder": "2",
+        "ans_hash": "b27717001d12f0b7cb0ddaca1a95b2027e704c17b4703775ed7e68416de44f08",
+        "size": "2"
+      },
+      {
+        "index": 3,
+        "placeholder": "3",
+        "ans_hash": "a3304102ea903c18ec7a8fa350078050530e501604a4d46d8416d0000bd758e4",
+        "size": "2"
+      },
+      {
+        "index": 4,
+        "placeholder": "4",
+        "ans_hash": "9ae10f06940c765f130caf52ebca92553f5b0dce9ff23ab9eff8b93bb1a2ad19",
+        "size": "2"
+      },
+      {
+        "index": 5,
+        "placeholder": "5",
+        "ans_hash": "9e8e35482de973c74563cc0c2bb184a1812a4c16ca6af23108f17c257c0b5580",
+        "size": "2"
+      },
+      {
+        "index": 6,
+        "placeholder": "6",
+        "ans_hash": "00c3b8c0244fc5aba1eeacd396d647337a8e8c4a61fbff2e3d649fd2b30dce78",
+        "size": "2"
+      },
+      {
+        "index": 7,
+        "placeholder": "7",
+        "ans_hash": "3fda08993280856714fa7f503781a92cc5aeb104e536ece83ed327d94958b94f",
+        "size": "2"
+      }
+    ],
+    "total_questions": 7
+  }
+]

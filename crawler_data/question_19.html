@@ -1,0 +1,61 @@
+<h2 id="statement">19</h2>
+<pre class="prettyprint" id="scoring-res">
+<div class="fl" style="width: 100%;">//circuit 1
+module gate (
+    input wire a,
+    input wire b,
+    output wire y
+);
+    and (y, a, b); 
+endmodule
+
+
+//circuit 2
+module dataflow (
+    input wire a,
+    input wire b,
+    output wire y
+);
+    assign y = a & b; 
+endmodule
+
+
+// circuit 3
+module behavioral (
+    input wire a,
+    input wire b,
+    output reg y
+);
+    always @(*) begin
+        y = a & b; 
+    end
+endmodule
+
+
+1. What is the module name in first module?<input size=2 ans="65fbd054f703b5861ca948c16153993bdde3778a4654ad0fc37b21232ff62d49" placeholder=1></input>
+2. What is the module name in second module?<input size=2 ans="e73ae95ff4d5cc93e8eda6c665466180d9cb84c3414ecaac481f85662426eb2d" placeholder=2></input>
+3. What is the module name in third module?<input size=2 ans="66ed4ce0c64b09d59c70626346ae5d3d037f487a4ee3911eb28bb385a59cdac8" placeholder=3></input>
+4. Which data type is used in the first module for output "y"?<input size=2 ans="a6efe540e4965c885639d32e3550f158e7c0d6e0ed8a5d3f9c17af2fc537bc9c" placeholder=4></input>
+5. Which data type is used in the second module for output "y"?<input size=2 ans="d242d0bd9c287fef01dd591efe7db1bd0fb9532ce68e159ed22a0e7cf7fd425f" placeholder=5></input>
+6. Which data type is used in the third module for output "y"?<input size=2 ans="541eee5b2b5b00ed9aae9073d9ca9c3c60bff0356f1c49f055eca93e8ee9bc1d" placeholder=6></input>
+
+
+<!-- </div>
+<div class="fr"><img src="" width="500">
+</div> -->
+</pre>
+
+<div class="statisticalData">
+    <h5>Statistical Data</h5>
+    <div>Total number of questions: <span id="totalNumber">6</span></div>
+    <div>Number of correct answers: <span id="correctAnswers"></span></div>
+    <div>Accuracy rate: <span id="accuracyRate"></span></div>
+</div>
+
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+</script>

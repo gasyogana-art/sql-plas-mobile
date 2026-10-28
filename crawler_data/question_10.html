@@ -1,0 +1,45 @@
+<h2 id="statement">10</h2>
+<pre class="prettyprint" id="scoring-res">
+<div class="fl">module always_example<input size=2 ans="d24b520f797591f94cafb201ba7f0ef5c314a664b4ac1599bfa25eb069f4b965" placeholder=1></input>
+    input  clk,    
+    input  a, b,
+    output <input size=2 ans="817b0046124f0927dc06485ff3d746a53035349230d9e132ad1a9781a7aea66a" placeholder=2></input> q,y
+<input size=2 ans="dab641d5fc8a00406e272ae7f6878e12fe92f108129dc7c346d1308b9a717d15" placeholder=3></input>
+    // Edge-Triggered always block 
+    always <input size=2 ans="b3f00b3403dcc4b519ac5020ea37937f8e0261f2c223a2d91073b650b2b78d76" placeholder=4></input>(posedge <input size=2 ans="8ccea789c4c89933f8e02023bb52fcdc4d4d970ac658679263d07bc0cd56e43a" placeholder=5></input>) begin
+       q <= a;
+    end
+
+    // Signal-Triggered always block 
+    <input size=2 ans="c40837445fa95ab7c385bacf0769439b3fa28f95666dd5c5fc7a74bac3c5c415" placeholder=6></input> @(a or b) begin
+        y = a & b; 
+    end
+
+endmodule
+
+
+</div>
+<div class="fr">Edge-Triggered Explanation: 
+Edge-triggered blocks are triggered on a specific 	edge (rising or falling) of a clock or signal.
+<img src="images/Verilog_CH1_question10_img1.png" width="500">
+
+Signal-Triggered Explanation: 
+Signal-triggered blocks are triggered whenever 	there is a change in the specified signals.
+<img src="images/Verilog_CH1_question10_img2.png" width="500">
+</div>
+</pre>
+
+<div class="statisticalData">
+    <h5>Statistical Data</h5>
+    <div>Total number of questions: <span id="totalNumber">6</span></div>
+    <div>Number of correct answers: <span id="correctAnswers"></span></div>
+    <div>Accuracy rate: <span id="accuracyRate"></span></div>
+</div>
+
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+</script>

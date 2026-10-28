@@ -1,0 +1,46 @@
+<h2 id="statement">15</h2>
+<pre class="prettyprint" id="scoring-res">
+<div class="fl">module sequential_example (
+    input clk,  
+    input reset, 
+    input  a, 
+    input  b, 
+    output reg  c
+);
+always @(posedge clk or posedge reset) begin
+        if (reset)
+            c <= 0;   
+        else
+            c <= a & b; 
+    end
+
+endmodule
+
+
+1.What is the data type of c?<input size=2 ans="8bb8970e187057ec83bd66195d80ec49a37340eeb5714836af050068491cc3d0" placeholder=1></input>
+2.What is the module name?<input size=2 ans="eb3cfc9126921d1e108a38543d9bd7a1e7508c4332ec3e7d2b3aaf95c8ab06b9" placeholder=2></input>
+3.If a = 0, b = 1,what is c?<input size=2 ans="62c2b1c3145f7edc4100e7a9466a5644dfa24ea5679e4cde9c904ba9c12f9a36" placeholder=3></input>
+4. How many inputs are in this circuit?<input size=2 ans="41ef109e70a58a12aa884a2719d7be88497d7b1b378950dab1c53b9227f4f4ad" placeholder=4></input>
+5.What is the operator between a ,b (&,|,^)?<input size=2 ans="8d639eb0fcf604b08f1564a72aaba5103e56f1f0707df5a053258ed858613eff" placeholder=5></input>
+6. Is the logic in this module synchronous or asynchronous?<input size=2 ans="eece5c82074a16781bbffb5713e6aaac344dad6f8771ba439a077d55e607746a" placeholder=6></input>
+
+
+</div>
+<div class="fr"><img src="images/Verilog_CH1_question15_img.png" width="500">
+</div>
+</pre>
+
+<div class="statisticalData">
+    <h5>Statistical Data</h5>
+    <div>Total number of questions: <span id="totalNumber">6</span></div>
+    <div>Number of correct answers: <span id="correctAnswers"></span></div>
+    <div>Accuracy rate: <span id="accuracyRate"></span></div>
+</div>
+
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+</script>

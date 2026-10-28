@@ -1,0 +1,49 @@
+<h2 id="statement">11</h2>
+<pre class="prettyprint" id="scoring-res">
+<div class="fl">//circuit 1
+module edge_clk (
+    input clk,
+    input  a,
+    output <input size=2 ans="b1d70f26c70c85e928ab8cb4cf6caf621383c2480aed2d918e3c97d8fb37f187" placeholder=1></input> b
+);
+
+    always <input size=2 ans="6d6c40fa5cbe6ce85f77ed5a1fbc796d67e0ecd09c293d62e5f61e5a2021539c" placeholder=2></input>(posedge clk) <input size=2 ans="7f99dbf190f6d1f14793c62f74759d2239108b0eda96e5a76aa2bada5a04a5cf" placeholder=3></input>
+	b <= a;
+    end
+<input size=2 ans="971534382f88ee8d501748cccc8b0a5fadae8f3d74116b237fc6e1f98a443205" placeholder=4></input>
+
+
+//circuit 2
+<input size=2 ans="50557005e0b2200c75db963bf860c7b553153f630477fbfa4906ccf24c17f447" placeholder=5></input> signal(
+    input a,
+    output <input size=2 ans="4c61e1e64228edb8b6de1b86d95bb69903b7c594db1fbc51feb3f700b07fd7e2" placeholder=6></input> b
+);
+
+    <input size=2 ans="ac07de295d059fb55e4a707cfc9503d4d04f1368f63d71fdcc1f1a10d5d67113" placeholder=7></input> @(*) begin
+        b = a;
+    <input size=2 ans="25458c9ae4a35a5e1b07c8d1b1af138ef2ff681e9b2a7dcc0ae6e0a721ac6545" placeholder=8></input>
+
+endmodule
+
+
+</div>
+<div class="fr"><img src="images/Verilog_CH1_question11_img1.png" width="200">
+The output signal in always block must be declared as type reg.
+<img src="images/Verilog_CH1_question11_img2.png" width="500">
+</div>
+</pre>
+
+<div class="statisticalData">
+    <h5>Statistical Data</h5>
+    <div>Total number of questions: <span id="totalNumber">8</span></div>
+    <div>Number of correct answers: <span id="correctAnswers"></span></div>
+    <div>Accuracy rate: <span id="accuracyRate"></span></div>
+</div>
+
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+</script>

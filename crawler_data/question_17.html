@@ -1,0 +1,38 @@
+<h2 id="statement">17</h2>
+<pre class="prettyprint" id="scoring-res">
+<div class="fl">Please select one of "reg" and "wire" and fill in the spaces below.
+
+1. In an always block, variables assigned values must be declared as <input size=2 ans="cc6f97635a594480fbd6aabf4c90e02d0283f479625411889a948d2d82c2323c" placeholder=1></input>.
+2. The default type for undeclared signals in Verilog is <input size=2 ans="5cfef0ba447a05ae200784f66eb1e758236fd23b46f45af1d446cac9e0dcd851" placeholder=2></input>.
+3. For combinational logic described using an assign statement, the output signal should be declared as <input size=2 ans="51edf4b60b2079722ce8c86215e4de5b6046682be671aefd1e4ef77a9cc63db7" placeholder=3></input>.
+4. To store the state in a flip-flop or register, the signal type should be <input size=2 ans="3cf758ad1262fac5e622c096b5897207bd26e1c3c8a2f177b60663316fbdcdd3" placeholder=4></input>.
+5. In a sensitivity list for combinational logic, signals that are part of the condition must be of type <input size=2 ans="40593bea066f5b640af091969c8c859d4f67af92d79e156f1f1f87babcb8b713" placeholder=5></input>.
+6. When you need to hold a value across clock cycles, the signal must be declared as <input size=2 ans="6bab984e627819adb32b1fa319d6b015e67ae26ed1cec5ff827331abfad449c7" placeholder=6></input>.
+7. For a multiplexer output defined using an always @(*) block, the output should be declared as <input size=2 ans="27cdfbb825452df4b5501832aae5e82503a354656928176522fb8e3016db21e9" placeholder=7></input>.
+
+
+</div>
+<div class="fr"><img src="images/Verilog_CH1_question17_img1.png" width="200">   <img src="images/Verilog_CH1_question17_img2.png" width="200">
+`wire`: Used for combinational logic and signal connections, cannot store values, driven by `assign` statements.
+`reg`: Used for sequential logic, can store values, assigned within always blocks.
+
+Reminders:
+・Variables assigned within an always block must be of type reg.
+・If a signal is not explicitly declared as wire or reg, it defaults to wire.
+</div>
+</pre>
+
+<div class="statisticalData">
+    <h5>Statistical Data</h5>
+    <div>Total number of questions: <span id="totalNumber">7</span></div>
+    <div>Number of correct answers: <span id="correctAnswers"></span></div>
+    <div>Accuracy rate: <span id="accuracyRate"></span></div>
+</div>
+
+<h2 id="answer">Answer</h2>
+<a class="btn" href="javascript:newScoring()">Answer</a>
+<script type="text/javascript">
+    $(function () {
+        prettyPrint();
+    });
+</script>
