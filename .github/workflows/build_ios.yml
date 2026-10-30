@@ -24,6 +24,7 @@ jobs:
 
       - name: Build iOS Simulator App
         run: |
+          rm -rf ios/Podfile ios/Podfile.lock ios/Pods
           flutter build ios --simulator --no-codesign
 
       - name: Zip Runner.app for Appetize.io
