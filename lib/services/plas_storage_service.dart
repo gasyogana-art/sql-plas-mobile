@@ -24,6 +24,9 @@ class PlasStorageService {
   static const String _recordPrefix = 'plas_rec:';
   static const String _keysOrderKey = 'plas_rec_keys_order';
   static const String _studentIdKey = 'plas_student_id';
+  static const String _studentNameKey = 'plas_student_name';
+  static const String _courseNameKey = 'plas_course_name';
+  static const String defaultCourseName = 'Hardware Description Language (Verilog HDL)';
 
   /// Save an evaluation attempt
   static Future<void> saveAttempt(EvaluationResult result) async {
@@ -89,6 +92,34 @@ class PlasStorageService {
   static Future<void> setStudentId(String studentId) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_studentIdKey, studentId.trim());
+  }
+
+  /// Get saved student Name
+  static Future<String> getStudentName() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString(_studentNameKey) ?? '';
+  }
+
+  /// Set saved student Name
+  static Future<void> setStudentName(String studentName) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_studentNameKey, studentName.trim());
+  }
+
+  /// Get saved Course Name (defaults to Hardware Description Language)
+  static Future<String> getCourseName() async {
+    final prefs = await SharedPreferences.getInstance();
+    final saved = prefs.getString(_courseNameKey);
+    if (saved != null && saved.trim().isNotEmpty) {
+      return saved.trim();
+    }
+    return defaultCourseName;
+  }
+
+  /// Set saved Course Name
+  static Future<void> setCourseName(String courseName) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_courseNameKey, courseName.trim());
   }
 
   /// Replicates expression() from storage.js

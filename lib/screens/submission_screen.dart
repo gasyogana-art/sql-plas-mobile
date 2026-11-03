@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../services/plas_storage_service.dart';
 import '../theme/app_theme.dart';
+import '../widgets/submission_export_modal.dart';
 
 class SubmissionScreen extends StatefulWidget {
   const SubmissionScreen({super.key});
@@ -12,6 +13,8 @@ class SubmissionScreen extends StatefulWidget {
 
 class _SubmissionScreenState extends State<SubmissionScreen> {
   final TextEditingController _studentIdController = TextEditingController();
+  final TextEditingController _studentNameController = TextEditingController();
+  final TextEditingController _courseNameController = TextEditingController();
   final TextEditingController _recordController = TextEditingController();
   final GlobalKey _saveButtonKey = GlobalKey();
   bool _isLoading = false;
@@ -19,25 +22,34 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
   @override
   void initState() {
     super.initState();
-    _loadSavedStudentId();
+    _loadSavedStudentInfo();
   }
 
-  Future<void> _loadSavedStudentId() async {
+  Future<void> _loadSavedStudentInfo() async {
     final savedId = await PlasStorageService.getStudentId();
-    if (mounted && savedId.isNotEmpty) {
-      _studentIdController.text = savedId;
+    final savedName = await PlasStorageService.getStudentName();
+    final savedCourse = await PlasStorageService.getCourseName();
+    if (mounted) {
+      if (savedId.isNotEmpty) _studentIdController.text = savedId;
+      if (savedName.isNotEmpty) _studentNameController.text = savedName;
+      _courseNameController.text = savedCourse;
     }
   }
 
   @override
   void dispose() {
     _studentIdController.dispose();
+    _studentNameController.dispose();
+    _courseNameController.dispose();
     _recordController.dispose();
     super.dispose();
   }
 
   Future<void> _handleShowRecord() async {
     final uid = _studentIdController.text.trim();
+    final name = _studentNameController.text.trim();
+    final course = _courseNameController.text.trim();
+
     if (uid.isEmpty) {
       setState(() {
         _recordController.text = 'Fill in Student ID';
@@ -49,6 +61,9 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
       setState(() => _isLoading = true);
     }
     await PlasStorageService.setStudentId(uid);
+    if (name.isNotEmpty) await PlasStorageService.setStudentName(name);
+    if (course.isNotEmpty) await PlasStorageService.setCourseName(course);
+
     final text = await PlasStorageService.generateRecordText(uid);
 
     if (mounted) {
@@ -178,14 +193,33 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
         ),
         const SizedBox(height: 16),
 
-        // Step 1: Student ID
+        // Step 1: Student Information
         _buildStepBadge('1', 'Enter your Student ID'),
         const SizedBox(height: 8),
         TextField(
           controller: _studentIdController,
           decoration: const InputDecoration(
-            hintText: 'Student ID',
+            labelText: 'Student ID *',
+            hintText: 'e.g. 1301204012',
             prefixIcon: Icon(Icons.badge_outlined),
+          ),
+        ),
+        const SizedBox(height: 8),
+        TextField(
+          controller: _studentNameController,
+          decoration: const InputDecoration(
+            labelText: 'Student Name',
+            hintText: 'e.g. Budi Santoso',
+            prefixIcon: Icon(Icons.person_outline),
+          ),
+        ),
+        const SizedBox(height: 8),
+        TextField(
+          controller: _courseNameController,
+          decoration: const InputDecoration(
+            labelText: 'Course Name',
+            hintText: 'e.g. Hardware Description Language',
+            prefixIcon: Icon(Icons.school_outlined),
           ),
         ),
 
@@ -246,9 +280,32 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
 
         const SizedBox(height: 20),
 
-        // Step 3: Save
+        // Step 3: Generate Submission & Export
         _buildStepBadge('3', 'Save & Export Record File'),
         const SizedBox(height: 8),
+
+        // Primary: Generate TXT Submission
+        ElevatedButton.icon(
+          icon: const Icon(Icons.description_outlined, color: Colors.white),
+          label: const Text(
+            'Generate TXT Submission',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppTheme.primary,
+            padding: const EdgeInsets.symmetric(vertical: 14),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+            elevation: 2,
+          ),
+          onPressed: () => SubmissionExportModal.show(context),
+        ),
+        const SizedBox(height: 10),
+
+        // Secondary: Classic PLAS Save
         ElevatedButton.icon(
           key: _saveButtonKey,
           icon: const Icon(Icons.save_alt, color: Colors.white),
@@ -286,7 +343,7 @@ class _SubmissionScreenState extends State<SubmissionScreen> {
               SizedBox(width: 8),
               Expanded(
                 child: Text(
-                  'Instructions:\n1. Input your Student ID.\n2. Tap "Show Record" to generate your SHA-256 session hash and answer logs.\n3. Tap "Save" to export V_CH1_<StudentID>.txt and submit it according to your instructor\'s guidelines.',
+                  'Instructions:\n1. Input your Student ID, Name, and Course Name.\n2. Tap "Generate TXT Submission" to produce a clean submission report containing your student info, question answers, grades, and accuracy summary, ready to save to your device or share via Email and Microsoft Teams.\n3. Alternatively, tap "Save PLAS Format" to export the raw V_CH1_<StudentID>.txt hash file.',
                   style: TextStyle(
                     fontSize: 12,
                     color: Color(0xFF0C5460),

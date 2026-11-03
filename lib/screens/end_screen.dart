@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../services/plas_storage_service.dart';
 import '../services/problem_repository.dart';
 import '../theme/app_theme.dart';
+import '../widgets/submission_export_modal.dart';
 
 class EndScreen extends StatefulWidget {
   final VoidCallback onBackToProblems;
@@ -145,6 +146,28 @@ class _EndScreenState extends State<EndScreen> {
         ),
 
         const SizedBox(height: 16),
+
+        // Generate Submission TXT button
+        ElevatedButton.icon(
+          icon: const Icon(Icons.description_outlined, color: Colors.white),
+          label: const Text(
+            'Generate TXT Submission',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+            ),
+          ),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppTheme.topButtonColor,
+            padding: const EdgeInsets.symmetric(vertical: 14),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+            elevation: 2,
+          ),
+          onPressed: () => SubmissionExportModal.show(context),
+        ),
+
+        const SizedBox(height: 12),
 
         // Navigation back button
         ElevatedButton.icon(
